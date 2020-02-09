@@ -5,34 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20sp"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
-    <!---Textview: Label REGISTER -->
+    <!---Textview: Label LOGIN -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Mku App"
+        android:text="Login"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
         android:textSize="25sp" />
 
+    <!---EditText: Input E-mail -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTIL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_marginTop="170dp">
 
         <EditText
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="textEmailAddress"
-            tools:ignore="HardcodedText" />
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!---EditText: Input Password -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTIL"
         android:layout_width="match_parent"
@@ -50,25 +51,45 @@
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
+    <!---Button:  REGISTER User -->
 
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/loginbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@id/passwordTIL"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/passwordTIL"/>
+        android:text="Login" />
 
     <TextView
-        android:id="@+id/have_accountTv"
+        android:id="@+id/forgotpasswordTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Login"
-        android:layout_below="@id/registerBtn"
+        android:layout_below="@id/loginbtn"
         android:layout_marginTop="30sp"
+        android:text="Forgot Password? Recover Now"
         android:textAlignment="center"
-        android:textColor="@color/colorBlack"/>
+        android:textColor="@color/colorBlack" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googlebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotpasswordTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!---Textview:  Click to go to RegisterPage -->
+    <TextView
+        android:id="@+id/noaccountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:text="No account? Register"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack" />
 
 
 </RelativeLayout>
