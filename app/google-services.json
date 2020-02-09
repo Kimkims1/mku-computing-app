@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101487297579",
+    "firebase_url": "https://mku-computing-app.firebaseio.com",
+    "project_id": "mku-computing-app",
+    "storage_bucket": "mku-computing-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101487297579:android:69df6da559f2cceea5966e",
+        "android_client_info": {
+          "package_name": "com.droid.mkucomputingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101487297579-5aqtndghvg0l7792p3on337lp8n2dtls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.droid.mkucomputingapp",
+            "certificate_hash": "965628357869171836c43a69437488873033fd67"
+          }
+        },
+        {
+          "client_id": "101487297579-banknh7ar5cjpfnfhcqc88qsmuc4ihg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5eMSurwnU3RBu80HHz2T-ehvHSgUZZkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101487297579-banknh7ar5cjpfnfhcqc88qsmuc4ihg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
